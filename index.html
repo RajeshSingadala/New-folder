@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Button trigger modal -->
+    <div class="text-center button">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+            click
+        </button>
+    </div>
+    
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header modal-header-section">
+                    <h1 class="modal-title" id="staticBackdropLabel">Add New Item</h1>
+                    <h1 class="vertical"></h1>
+                    <h1 class="modal-title2">Move Existing Item</h1>
+                    <button type="button" class="close close-icon" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <label class="input-tag" for="item Name">Item Name</label>
+                        <input type="text" name="name" id="item Name" class="input" />
+                        <hr class="solid horizontal-line">
+                        <label for="myfile">Attachments</label>
+                        <input type="file" id="myfile" name="myfile">
+                        <hr class="solid horizontal-line">
+                        <label class="input-tag" for="item Name">Description</label>
+                        <input type="text" name="name" id="item Name" class="input" />
+                        <hr class="solid horizontal-line">
+                    </div>
+                    <h1 class="default-section">Default Section</h1>
+                    <hr class="hr-line">
+                    <label class="input-tag" for="item Name">Assign Users</label>
+                    <input type="text" name="name" id="item Name" class="input" />
+                    <hr class="solid horizontal-line">
+                    <label class="input-tag" for="item Name">Status</label>
+                    <select id="status" name="status" class="status">
+                        <option selected=""></option>
+                        <option value="Todo">Todo</option>
+                        <option value="planning">planning</option>
+                        <option value="QA Raised Bugs">QA Raised Bugs</option>
+                        <option value="Re Open">Re Open</option>
+                        <option value=" Inprogress">Inprogress</option>
+                        <option value="Ready To Text">Ready To Text</option>
+                        <option value="Done">Done</option>
+                    </select>
+                    <hr class="solid horizontal-line">
+                    <label class="input-tag" for="item Name">Epic</label>
+                    <select id="status" name="status" class="epic">
+                        <option selected=""></option>
+                        <option value="none">None</option>
+                        <option value="vender">Vender Onboarding(Market Place)</option>
+                        <option value="Platform">Platform Release</option>
+                        <option value="Marketing">Marketing</option>
+                    </select>
+                    <hr class="solid horizontal-line">
+                    <label class="input-tag" for="item Name">Item Type</label>
+                    <select id="status" name="status" class="Item-type">
+                        <option selected=""></option>
+                        <option value="story">Story</option>
+                        <option value="Task">Task</option>
+                        <option value="Bug"> Bug</option>
+                    </select>
+                    <hr class="solid horizontal-line">
+                    <label for="date">Start Date</label>
+                    <input type="date" name="" id="" value="" class="date" />
+                    <hr class="solid horizontal-line">
+                    <label for="date">End Date</label>
+                    <input type="date" name="" id="" value="" class="end-date" />
+                    <hr class="solid horizontal-line">
+                    <label class="input-tag" for="Duration">Duration</label>
+                    <input type="text" name="name" id="Duration" class="input" />
+                    <hr class="solid horizontal-line">
+                    <label class="input-tag" for="points">Estimation Points</label>
+                    <select id="points" name="status" class="Item-type">
+                        <option selected="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3"> 3</option>
+                        <option value="4"> 4</option>
+                        <option value="5"> 5</option>
+                    </select>
+                    <hr class="solid horizontal-line">
+                    <label class="input-tag" for="Release">Release</label>
+                    <input type="text" name="name" id="Release" class="input" />
+                    <hr class="solid horizontal-line">
+                </div>
+                <div class="modal-footer footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Create</button>
+                    <button type="button" class="btn ">Add More</button>
+                    <button type="button" class="btn ">Cancel</button>
+                    <div class="layout">
+                        <h5>Layout: <span class="span-element">Standard Layout</span></h5>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
